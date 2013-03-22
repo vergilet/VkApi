@@ -60,11 +60,11 @@ public class MainForm extends javax.swing.JFrame {
 
         jLoginField.setBackground(new java.awt.Color(66, 70, 71));
         jLoginField.setForeground(new java.awt.Color(227, 227, 227));
-        jLoginField.setText("Sharpey.lviv@gmail.com");
+        jLoginField.setText("");
 
         jPassField.setBackground(new java.awt.Color(66, 70, 71));
         jPassField.setForeground(new java.awt.Color(227, 227, 227));
-        jPassField.setText("6637515a");
+        jPassField.setText("");
 
         jLoginInButton.setText("Come on!");
         jLoginInButton.addActionListener(new java.awt.event.ActionListener() {
