@@ -1,0 +1,7 @@
+https://api.vkontakte.ru/method/users.get?uids=11335144&fields=	uid,
+																first_name,
+																last_name,
+																sex,
+																bdate,
+																photo,
+																&token=956f3080da4d4355959aac8a8995e9bd8e995c095c3d56aea0bc11e199495b6

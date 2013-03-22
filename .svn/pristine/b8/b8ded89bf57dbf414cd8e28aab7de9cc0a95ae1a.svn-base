@@ -1,0 +1,32 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.googlecode.ichar;
+
+import java.util.List;
+
+/**
+ *
+ * @author Marika's Computer
+ */
+public class MessagesGetHistoryModel {
+
+    private List<String> response;
+    private String body;
+    private String mid;
+    private String from_id;
+    private String date;
+    private String read_state;
+
+    public MessagesGetHistoryModel() {
+    }
+
+    public MessagesGetHistoryModel(List<String> response) {
+        this.response = response;
+    }
+
+    public List<String> getResponse() {
+        return response;
+    }
+}

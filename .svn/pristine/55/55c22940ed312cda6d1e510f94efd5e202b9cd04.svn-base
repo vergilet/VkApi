@@ -1,0 +1,38 @@
+
+import java.util.List;
+
+import com.google.gson.Gson;
+
+public class Testclass {
+
+    static String somejson = "{'response':[{'uid':11335144,'first_name':'Ярослав','last_name':'Reboot','photo':'http:\\\\cs9912.userapi.com\\u11335144\\e_0222e79d.jpg','online':0},{'uid':31589967,'first_name':'Андрей','last_name':'Томилиан','photo':'http:\\\\cs4126.userapi.com\\u31589967\\e_20c421e1.jpg','online':0}]}";
+
+    public static void main(String[] args) throws Exception {
+        Gson gson = new Gson();
+        CashGamesContainer cashResponse = gson.fromJson(somejson, CashGamesContainer.class);
+        System.out.println(gson.toJson(cashResponse));
+
+        List<Result> results = cashResponse.response;
+        for (Result cashResult : results) {
+            System.out.println(cashResult.first_name);
+        }
+    }
+}
+//class RecordResponse
+//{
+//  CashGamesContainer CashGames;
+//}
+
+class CashGamesContainer {
+
+    List<Result> response;
+}
+
+class Result {
+
+    long uid;
+    String first_name;
+    String last_name;
+    String photo;
+    char online;
+}
