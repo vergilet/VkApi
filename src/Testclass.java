@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -37,8 +36,8 @@ public class Testclass {
     static String APP_ID = "2783462";
     static String settings = "4098";
     static String redirect_uri = "http://api.vk.com/blank.html";
-    static String login = "sharpey.lviv@gmail.com";
-    static String pass = "6637515a";
+    static String login = "";
+    static String pass = "";
     //А ще робимо статичний ХТТП клієнт щоб кукі зберігались
     //І да, це важливо
     static DefaultHttpClient client = new DefaultHttpClient();
